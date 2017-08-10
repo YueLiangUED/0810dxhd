@@ -1,0 +1,440 @@
+header{
+    position: relative;
+    box-sizing: border-box;
+    padding-top: 2.65rem;
+    width: 37.5rem;
+    height: 27.35rem;
+    background: url("../images/bg01_02.png") center no-repeat;
+    background-size: cover;
+}
+header .topTextWrap{
+    position: fixed;
+    top: 0.6rem;
+    overflow: hidden;
+    width: 37.5rem;
+    height: 2.05rem;
+    font-size: 1.1rem;
+    line-height: 2.05rem;
+    color: #ffffff;
+    background-color: rgba(0,0,0,.64);
+    z-index: 50;
+}
+header .topTextWrap .topTextInner{
+    position: absolute;
+    height: 2.05rem;
+    white-space: nowrap;
+}
+header .topTextWrap .topTextInner p span{
+    margin-left: 4.3rem;
+}
+header .jpBox{
+    padding-left: 25.15rem;
+}
+header .jpBox ul li{
+    float: left;
+    margin-right: 1.2rem;
+    width: 2.6rem;
+    text-align: center;
+}
+header .jpBox ul li span{
+    display: block;
+    width: 2.6rem;
+    height: 5.15rem;
+}
+header .jpBox ul li:nth-child(1) span{
+    background: url("../images/jinpai.png") center no-repeat;
+    background-size: cover;
+}
+header .jpBox ul li:nth-child(2) span{
+    background: url("../images/yinpai.png") center no-repeat;
+    background-size: cover;
+}
+header .jpBox ul li:nth-child(3) span{
+    background: url("../images/tongpai.png") center no-repeat;
+    background-size: cover;
+}
+header .jpBox ul li p{
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    color: #ffffff;
+}
+header .loadBox{
+    padding: 0.2rem 0 0 24.6rem;
+}
+header .loadBox p{
+    margin-bottom: .4rem;
+    padding-left: .5rem;
+    font-size: 1rem;
+    color: #ffffff;
+}
+header .loadBox .loadedWrap{
+    box-sizing: border-box;
+    padding: 0.165rem 0.15rem;
+    width: 11.55rem;
+    height: 1.9rem;
+    background: url("../images/loadedWrapBg.png") center no-repeat;
+    background-size: cover;
+}
+header .loadBox .loadedInner p{
+    font-size: 1rem;
+    line-height: 1.6rem;
+    text-align: right;
+    font-weight: bold;
+    text-shadow: #000 1px 1px 1px;
+    color: #ffffff;
+}
+header .loadBox .loadedInner{
+    float: left;
+    box-sizing: border-box;
+    margin: auto;
+    padding-right: .5rem;
+    height: 1.6rem;
+    border-radius: 5rem;
+    background: repeating-linear-gradient(-75deg, #71cb21, #71cb21 .6rem, #cbf43b 0, #cbf43b 1.2rem);
+}
+header .hdgzBox{
+    position: absolute;
+    top: 14.8rem;
+    left: 1.65rem;
+    width: 11.2rem;
+    height: 5.65rem;
+    background: url("../images/hdgz.png") center no-repeat;
+    background-size: cover;
+    z-index: 50;
+}
+header .nanhu{
+    position: absolute;
+    bottom: 0;
+    left: 6.55rem;
+    width: 18.9rem;
+    height: 10.65rem;
+    background: url("../images/pic-1.png") center no-repeat;
+    background-size: cover;
+}
+header .nanhu.active{
+    background: url("../images/pic-1-act.png") center no-repeat;
+    background-size: cover;
+}
+/*hi标识上下运动*/
+@-webkit-keyframes bounce-down {
+    25% {
+        -webkit-transform: translateY(-1rem);
+    }
+    50%, 100% {
+        -webkit-transform: translateY(0);
+    }
+    75% {
+        -webkit-transform: translateY(1rem);
+    }
+}
+@keyframes bounce-down {
+    25% {
+        transform: translateY(-1rem);
+    }
+    50%, 100% {
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(1rem);
+    }
+}
+.hi{
+    position: absolute;
+    width: 3.4rem;
+    height: 4.25rem;
+    background: url("../images/hi.png") center no-repeat;
+    background-size: cover;
+    -webkit-animation: bounce-down 1.3s linear infinite;
+    animation: bounce-down 1.3s linear infinite;
+}
+header .hi{
+    bottom: 9.1rem;
+    left: 18.05rem;
+}
+section .content{
+    position: relative;
+    width: 37.5rem;
+}
+section .content.m1{
+    height: 15.15rem;
+    background: url("../images/bg02_03.png") center no-repeat;
+    background-size: cover;
+}
+section .content.m1 .aoti{
+    position: absolute;
+    bottom: 0;
+    right: 1.95rem;
+    width: 23.8rem;
+    height: 8.7rem;
+    background: url("../images/pic-2.png") center no-repeat;
+    background-size: cover;
+}
+section .content.m1 .aoti.active{
+    background: url("../images/pic-2-act.png") center no-repeat;
+    background-size: cover;
+}
+section .content.m1 .hi{
+    bottom: 9.1rem;
+    right: 13.55rem;
+}
+section .content.m2{
+    height: 14.55rem;
+    background: url("../images/bg03_04.png") center no-repeat;
+    background-size: cover;
+}
+section .content.m2 .tiyuguan{
+    position: absolute;
+    bottom: 0;
+    left: 0.65rem;
+    width: 26.85rem;
+    height: 7.55rem;
+    background: url("../images/pic-3.png") center no-repeat;
+    background-size: cover;
+}
+section .content.m2 .tiyuguan.active{
+    background: url("../images/pic-3-act.png") center no-repeat;
+    background-size: cover;
+}
+section .content.m2 .hi{
+    bottom: 7.95rem;
+    left: 15.65rem;
+}
+section .content.m3{
+    height: 24.1rem;
+    background: url("../images/bg04_05.png") center no-repeat;
+    background-size: cover;
+}
+section .content.m3 .gongyedaxue{
+    position: absolute;
+    bottom: 0;
+    right: 0.55rem;
+    width: 25.8rem;
+    height: 7.65rem;
+    background: url("../images/pic-4.png") center no-repeat;
+    background-size: cover;
+}
+section .content.m3 .gongyedaxue.active{
+    background: url("../images/pic-4-act.png") center no-repeat;
+    background-size: cover;
+}
+section .content.m3 .hi{
+    bottom: 7.7rem;
+    left: 17.8rem;
+}
+section .content.m4{
+    height: 18.95rem;
+    background: url("../images/bg05_06.png") center no-repeat;
+    background-size: cover;
+}
+section .content.m4 .zuqiuchang{
+    position: absolute;
+    bottom: 0;
+    right: 4.8rem;
+    width: 24.35rem;
+    height: 8.9rem;
+    background: url("../images/pic-5.png") center no-repeat;
+    background-size: cover;
+}
+section .content.m4 .zuqiuchang.active{
+    background: url("../images/pic-5-act.png") center no-repeat;
+    background-size: cover;
+}
+section .content.m4 .hi{
+    bottom: 8.7rem;
+    left: 14.1rem;
+}
+section .content.m5{
+    height: 19.8rem;
+    background: url("../images/bg06_07.png") center no-repeat;
+    background-size: cover;
+}
+section .content.m5 .tiyuzhongxin{
+    position: absolute;
+    bottom: 0;
+    left: 6.15rem;
+    width: 24.3rem;
+    height: 6.6rem;
+    background: url("../images/pic-6.png") center no-repeat;
+    background-size: cover;
+}
+section .content.m5 .tiyuzhongxin.active{
+    background: url("../images/pic-6-act.png") center no-repeat;
+    background-size: cover;
+}
+section .content.m5 .hi{
+    bottom: 6.45rem;
+    right: 12.35rem;
+}
+footer{
+    width: 37.5rem;
+    height: 11.9rem;
+    background: url("../images/bg07_08.png") center no-repeat;
+    background-size: cover;
+}
+footer div{
+    position: fixed;
+    top: 70%;
+    right: 0;
+    width: 10.4rem;
+    height: 5.65rem;
+    background: url("../images/jiangpin.png") center no-repeat;
+    background-size: cover;
+    z-index: 50;
+}
+/*遮罩层*/
+.mask{
+    position: absolute;
+    top: 0px;
+    filter: alpha(opacity=68);
+    background-color: #000;
+    z-index: 100;
+    left: 0px;
+    opacity: 0.68;
+    -moz-opacity: 0.68;
+}
+/*已获得礼包弹窗*/
+.homePageTc1{
+    display: none;
+    position: fixed;
+    top: 16.9rem;
+    left: 0;
+    right: 0;
+    box-sizing: border-box;
+    margin: auto;
+    padding-top: 2.5rem;
+    width: 25.9rem;
+    height: 20.2rem;
+    background: url("../images/tcBg-1.png") center no-repeat;
+    background-size: cover;
+    z-index: 999;
+}
+.homePageTc1 span{
+    position: absolute;
+    top: 1.4rem;
+    right: 2.8rem;
+    width: 2rem;
+    height: 2rem;
+    background: url("../images/tcClose-red.png") center no-repeat;
+    background-size: cover;
+    z-index: 10;
+}
+.homePageTc1 div{
+    position: absolute;
+    top: 0.9rem;
+    right: 2.35rem;
+    padding-top: 1.5rem;
+    width: 19.85rem;
+    text-align: center;
+}
+.homePageTc1 div p:nth-child(1){
+    font-size: 2rem;
+    color: #ff6462;
+}
+.homePageTc1 div p:nth-child(2){
+    font-size: 1.3rem;
+    color: #666666;
+}
+/*助力弹窗*/
+.homePageTc2{
+    display: none;
+    position: fixed;
+    top: 14.7rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 20.55rem;
+    z-index: 999;
+}
+.homePageTc2 span{
+    position: absolute;
+    top: 0.55rem;
+    right: 0;
+    width: 2rem;
+    height: 2rem;
+    background: url("../images/tcClose-white.png") center no-repeat;
+    background-size: cover;
+    z-index: 10;
+}
+.homePageTc2 div:nth-child(2){
+    position: absolute;
+    width: 20.55rem;
+    height: 15.9rem;
+    background: url("../images/tcBg-2.png") center no-repeat;
+    background-size: cover;
+}
+.homePageTc2 div:nth-child(3){
+    box-sizing: border-box;
+    position: absolute;
+    top: 15.9rem;
+    padding-top: 1.8rem;
+    width: 20.55rem;
+    height: 10rem;
+    text-align: center;
+    border-radius: 0 0 .5rem .5rem;
+    background-color: #ffffff;
+}
+.homePageTc2 div:nth-child(3) p{
+    font-size: 1.3rem;
+    line-height: 2.3rem;
+    color: #333333;
+}
+
+/*活动规则弹窗*/
+.homePageTc3{
+    display: none;
+    position: fixed;
+    overflow: hidden;
+    top: 10.5rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 29.1rem;
+    height: 42.5rem;
+    border-radius: 0.5rem;
+    background-color: #ffffff;
+    z-index: 999;
+}
+.homePageTc3>span{
+    position: absolute;
+    top: .6rem;
+    right: .7rem;
+    width: 2rem;
+    height: 2rem;
+    background: url("../images/tcClose-blue.png") center no-repeat;
+    background-size: cover;
+}
+.homePageTc3 ul{
+    overflow: scroll;
+    box-sizing: border-box;
+    padding: 2.1rem 1.5rem;
+    width: 100%;
+    height: 100%;
+}
+.homePageTc3 ul li:nth-child(odd){
+    display: flex;
+    align-items: center;
+    height: 1.5rem;
+}
+.homePageTc3 ul li:nth-child(odd) i:nth-child(1){
+    display: block;
+    margin: 0 .4rem 0 .15rem;
+    width: 0.2rem;
+    height: 1.5rem;
+    background-color: #3ebabe;
+}
+.homePageTc3 ul li:nth-child(odd) i:nth-child(2){
+    font-size: 1.4rem;
+    font-style: normal;
+    color: #3ebabe;
+}
+.homePageTc3 ul li:nth-child(even){
+    margin: 0.9rem 0 1.5rem;
+}
+.homePageTc3 ul li:nth-child(even) p{
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+    color: #666666;
+}
+.homePageTc3 ul li:last-child{
+    margin-bottom: 0;
+}
