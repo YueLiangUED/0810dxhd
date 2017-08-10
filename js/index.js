@@ -25,23 +25,22 @@ $(function () {
     $('.topTextWrap').textScroll();
 
     //首页进度条
-    var bar = function (num) { //参数为当前进度
+    var setBarwidth = function (num) { //参数为当前进度
         if(num === undefined){
             num = 15; //进度条默认最小宽度为15%
         }
-         var step = num;
          function temp () {
-            if(step >= 25){
-                $('#loadNum').text(step+'%');
-                $('.loadedInner').css('width',step+"%");
-            }else if(step < 25){
+            if(num >= 25){
+                $('#loadNum').text(num+'%');
+                $('.loadedInner').css('width',num+"%");
+            }else if(num < 25){
                 $('#loadNum').text('');
                 $('.loadedInner').css('width','15%');
             }
         }
         return temp();
     }
-    bar(30);
+    setBarwidth(30);
 
 
     //关闭弹窗按钮
