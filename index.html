@@ -120,7 +120,7 @@
         </li>
     </ul>
 </div>
-
+<!--提前加载图片-->
 <script>
     var PreLoad=function(a,b){var c=b||{};this.source=a,this.count=0,this.total=a.length,this.onload=c.onload,this.prefix=c.prefix||"",this.init()};PreLoad.prototype.init=function(){var a=this;a.source.forEach(function(b){var c=b.replace(/[#\?].*$/,'').substr(b.lastIndexOf(".")+1).toLowerCase(),d=a.prefix+b;switch(c){case"js":a.script.call(a,d);break;case"css":a.stylesheet.call(a,d);break;case"svg":case"jpg":case"gif":case"png":case"jpeg":a.image.call(a,d)}})},PreLoad.prototype.getProgress=function(){return Math.round(this.count/this.total*100)},PreLoad.prototype.image=function(a){var b=document.createElement("img");this.load(b,a),b.src=a},PreLoad.prototype.stylesheet=function(a){var b=document.createElement("link");this.load(b,a),b.rel="stylesheet",b.type="text/css",b.href=a,document.head.appendChild(b)},PreLoad.prototype.script=function(a){var b=document.createElement("script");this.load(b,a),b.type="text/javascript",b.src=a,document.head.appendChild(b)},PreLoad.prototype.load=function(a,b){var c=this;a.onload=a.onerror=a.onabort=function(a){c.onload&&c.onload({count:++c.count,total:c.total,item:b,type:a.type})}};
 
@@ -147,7 +147,20 @@
         'images/jinpai.png',
         'images/yinpai.png',
         'images/tongpai.png',
-        'images/loadedWrapBg.png'
+        'images/loadedWrapBg.png',
+        'images/girl.png',
+        'images/hdgz.png',
+        'images/erweima.png',
+        'images/hi.png',
+        'images/jiangpin.png',
+        'images/login.png',
+        'images/notLogin.png',
+        'images/secPageBanner.png',
+        'images/tcBg-1.png',
+        'images/tcBg-2.png',
+        'images/tcClose-blue.png',
+        'images/tcClose-red.png',
+        'images/tcClose-white.png'
     ]
     new PreLoad(resources);
 </script>
