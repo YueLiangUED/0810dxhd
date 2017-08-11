@@ -159,13 +159,11 @@ section footer{
     border-radius: 0 0 .5rem .5rem;
     background-color: #ffffff;
 }
-#secTc div:nth-child(2) span{
+#secTc div:nth-child(2) img{
     display: block;
     margin: 0 auto 1.5rem;
     width: 13.3rem;
     height: 13.3rem;
-    background: url("../images/erweima.png") center no-repeat;
-    background-size: cover;
 }
 #secTc div:nth-child(2) p{
     font-size: 1.5rem;
