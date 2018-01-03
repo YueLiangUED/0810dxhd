@@ -102,16 +102,16 @@ header .hdgzBox{
     background-size: cover;
     z-index: 50;
 }
-header .nanhu{
+section .content.m2 .nanhu{
     position: absolute;
-    bottom: 0;
+    top: -10.65rem;
     left: 6.55rem;
     width: 18.9rem;
     height: 10.65rem;
     background: url("../images/pic-1.png") center no-repeat;
     background-size: cover;
 }
-header .nanhu.active{
+section .content.m2 .nanhu.active{
     background: url("../images/pic-1-act.png") center no-repeat;
     background-size: cover;
 }
@@ -147,22 +147,17 @@ header .nanhu.active{
     -webkit-animation: bounce-down 1.3s linear infinite;
     animation: bounce-down 1.3s linear infinite;
 }
-header .hi{
-    bottom: 9.1rem;
+section .content.m2 .hi{
+    top: -13.35rem;
     left: 18.05rem;
 }
 section .content{
     position: relative;
     width: 37.5rem;
 }
-section .content.m1{
-    height: 15.15rem;
-    background: url("../images/bg02_03.png") center no-repeat;
-    background-size: cover;
-}
 section .content.m1 .aoti{
     position: absolute;
-    bottom: 0;
+    top: -8.7rem;
     right: 1.95rem;
     width: 23.8rem;
     height: 8.7rem;
@@ -174,15 +169,21 @@ section .content.m1 .aoti.active{
     background-size: cover;
 }
 section .content.m1 .hi{
-    bottom: 9.1rem;
+    top: -13.35rem;
     right: 13.55rem;
 }
-section .content.m2{
+section .content.m1{
     height: 14.55rem;
     background: url("../images/bg03_04.png") center no-repeat;
     background-size: cover;
 }
-section .content.m2 .tiyuguan{
+section .content.m2{
+    height: 15.15rem;
+    background: url("../images/bg02_03.png") center no-repeat;
+    background-size: cover;
+}
+
+section .content.m6 .tiyuguan{
     position: absolute;
     bottom: 0;
     left: 0.65rem;
@@ -191,11 +192,11 @@ section .content.m2 .tiyuguan{
     background: url("../images/pic-3.png") center no-repeat;
     background-size: cover;
 }
-section .content.m2 .tiyuguan.active{
+section .content.m6 .tiyuguan.active{
     background: url("../images/pic-3-act.png") center no-repeat;
     background-size: cover;
 }
-section .content.m2 .hi{
+section .content.m6 .hi{
     bottom: 7.95rem;
     left: 15.65rem;
 }

@@ -12,6 +12,7 @@ $(function () {
         var speed = 60, flag = null, tt, that = $(this), child = that.children();
         var p_w = that.width(), w = child.width();
         child.css({left: p_w - 80});
+        console.log(w);
         var t = (w + p_w) / speed * 800;
         function play(m) {
             var tm = m == undefined ? t : m;
@@ -80,7 +81,7 @@ $(function () {
     });
 
     //我的奖品页面未注册点击奖券
-    $('.notLoginList').on('click','li',function () {
+    $('.notLoginList').on('click',function () {
         $('#secTc').fadeIn();
         showMask();
     });

@@ -22,6 +22,10 @@ section header{
     background: url("../images/secPageBanner.png") center no-repeat;
     background-size: cover;
 }
+section ul{
+    height: 41rem;
+    overflow: scroll;
+}
 section ul li{
     position: relative;
     box-sizing: border-box;
@@ -33,11 +37,11 @@ section ul li div{
     padding-left: 1rem;
     width: 29.7rem;
 }
-section .notLoginList li{
+section ul .notLoginList{
     padding-top: 4.4rem;
     height: 6.8rem;
 }
-section .notLoginList li div:nth-child(1){
+section ul .notLoginList div:nth-child(1){
     position: absolute;
     top: 0;
     height: 4.4rem;
@@ -45,17 +49,17 @@ section .notLoginList li div:nth-child(1){
     background: url("../images/notLogin.png") center no-repeat;
     background-size: cover;
 }
-section .loginList li div{
+section ul .loginList div{
     height: 5.3rem;
     line-height: 5.3rem;
     background: url("../images/login.png") center no-repeat;
     background-size: cover;
 }
-section .notLoginList li div:nth-child(1) p:nth-child(1),section .loginList li div p:nth-child(1){
+section ul .notLoginList  div:nth-child(1) p:nth-child(1),section ul .loginList div p:nth-child(1){
     font-size: 1.5rem;
     color: #ffffff;
 }
-section .notLoginList li div:nth-child(1) p:nth-child(2),section .loginList li div p:nth-child(2){
+section ul .notLoginList div:nth-child(1) p:nth-child(2),section ul .loginList div p:nth-child(2){
     position: absolute;
     top: 0;
     bottom: 0;
@@ -63,14 +67,14 @@ section .notLoginList li div:nth-child(1) p:nth-child(2),section .loginList li d
     font-size: 2rem;
     color: #ffffff;
 }
-section .loginList li div p:nth-child(2){
+section ul .loginList div p:nth-child(2){
     right: 8.2rem;
 }
-section .notLoginList li div:nth-child(1) p:nth-child(2) span,section .loginList li div p:nth-child(2) span{
+section ul .notLoginList div:nth-child(1) p:nth-child(2) span,section ul .loginList div p:nth-child(2) span{
     margin: 0 .2rem;
     font-size: 1.2rem;
 }
-section .notLoginList li div:nth-child(2){
+section ul .notLoginList div:nth-child(2){
     margin-top: -0.3rem;
     height: 2.7rem;
     font-size: 1rem;
@@ -160,7 +164,6 @@ section footer{
     background-color: #ffffff;
 }
 #secTc div:nth-child(2) img{
-    display: block;
     margin: 0 auto 1.5rem;
     width: 13.3rem;
     height: 13.3rem;
